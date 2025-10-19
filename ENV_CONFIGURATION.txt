@@ -1,0 +1,37 @@
+# ============================================
+# COPY THIS TO YOUR .env FILE
+# ============================================
+
+# Clerk Authentication (Optional - not needed for current setup)
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/admin
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/admin
+
+# Supabase Configuration (REQUIRED - Already configured!)
+NEXT_PUBLIC_SUPABASE_URL=https://latkmexojwpyzgrjruzo.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhdGttZXhvandweXpncmpydXpvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA3MTg1MjksImV4cCI6MjA3NjI5NDUyOX0.gYqA99GuPysw8wcd74irn_G-hB_1HxGAj9tdIlEJwRM
+SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxhdGttZXhvandweXpncmpydXpvIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MDcxODUyOSwiZXhwIjoyMDc2Mjk0NTI5fQ.ZkRZXacxq0e7XR8A15B3VgdO2DCnOt4kNLI-369UiMU
+
+# Database URL (Optional - for direct PostgreSQL connection)
+DATABASE_URL=postgresql://postgres:sn@xir@db.latkmexojwpyzgrjruzo.supabase.co:5432/postgres
+
+# Email Configuration (Optional - for email sending feature)
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USER=your_email@gmail.com
+EMAIL_PASSWORD=your_app_password
+EMAIL_FROM=XIE Student Council <noreply@xie.edu>
+
+# Admin User IDs (Optional - not needed for current password-based auth)
+ADMIN_USER_IDS=user_xxxxx,user_yyyyy
+
+# ============================================
+# INSTRUCTIONS:
+# 1. Copy all lines above
+# 2. Paste into your .env file (replace all content)
+# 3. Save the file
+# 4. Restart your dev server: npm run dev
+# ============================================
